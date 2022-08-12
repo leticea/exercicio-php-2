@@ -26,7 +26,7 @@
         </style>
     </head>
     <body>
-        <p>Calcular o valor do salário total com horas extras:
+        <p>Saber o valor do salário com as horas extras:
         <form id="minhaForm" method="get" action="exerc_22.php">
             Horas trabalhadas por mês: <input type="txt_number" name="horas_mes"><br><br> 
             Salário por hora: <input type="txt_number" name="salario_hora"><br><br>
@@ -56,11 +56,25 @@
 
     function calcularNovoSalario($horas_mes, $salario_hora)
     {
-        $horas_extras = ($horas_mes - 160) * ($salario_hora) + ($salario_hora * 50/100);
+        if($horas_mes <= 160) {
 
-        $salario_total = 160 * $salario_hora + $horas_extras;
+            $salario = $horas_mes * $salario_hora;
+            echo "<p>Não tem horas extras.";
 
-        echo "O novo salário é de $salario_total.";
+        }else {
 
+            $salario = 160 * $salario_hora;
+
+            $horas_extras = $horas_mes - 160;
+
+            $valor_normal = $salario_hora + ($salario_hora * 50/100);
+
+            $salario_extras = $valor_normal * $horas_extras;
+
+            $total = $salario + $salario_extras;
+
+            echo "<p>O salário total com as horas extras é de R$ $total.";
+        }
+                 
     }
             
