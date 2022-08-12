@@ -35,13 +35,13 @@
         <?php
             
             if (isset($_GET['valor'])){
+
                 $valor = $_GET['valor'];
 
                 verificarValor($valor);
-
+                
             }
 
-                    
         ?>
             <p>
                 <a href="../">Voltar</a>
@@ -52,8 +52,7 @@
 
         function verificarValor($valor)
 
-        {    
-           
+        {              
             if($valor > 0) {
 
                 echo '<p>O valor é positivo.';
@@ -65,8 +64,7 @@
             }else {
 
                 echo '<p>O valor é igual a zero.';
-            }                       
-            
+            }                                  
         }
 
        
