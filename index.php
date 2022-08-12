@@ -28,6 +28,8 @@
             <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_22.php">Exercício 22</a></b></p><br>         
             <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_24.php">Exercício 24</a></b></p><br>               
             <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_25.php">Exercício 25</a></b></p><br>               
+            <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_26.php">Exercício 26</a></b></p><br>               
+
 
         </div>    
     </body>
