@@ -32,6 +32,8 @@
             <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_27.php">Exercício 27</a></b></p><br>               
             <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_28.php">Exercício 28</a></b></p><br>               
             <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_29.php">Exercício 29</a></b></p><br>               
+            <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_30.php">Exercício 30</a></b></p><br>               
+
 
         </div>    
     </body>
