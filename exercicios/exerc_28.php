@@ -63,16 +63,15 @@
 
         if($valor_1 > $valor_2 && $valor_1 > $valor_3) {
 
-            echo $valor_1;
+            echo '<p>'.$valor_1;
 
         }elseif($valor_2 > $valor_1 && $valor_2 > $valor_3) {
 
-
-            echo $valor_2;
+            echo '<p>'.$valor_2;
 
         }else {
 
-            echo $valor_3;
+            echo '<p>'.$valor_3;
         }
            
     }
