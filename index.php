@@ -35,6 +35,8 @@
             <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_30.php">Exercício 30</a></b></p><br>               
             <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_31.php">Exercício 31</a></b></p><br>               
             <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_32.php">Exercício 32</a></b></p><br>               
+            <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_33.php">Exercício 33</a></b></p><br>               
+
 
 
 

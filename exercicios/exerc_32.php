@@ -68,7 +68,7 @@
 
             }else{
 
-                echo "Empate.";
+                echo "<p>Empate.";
             }
 
         }
