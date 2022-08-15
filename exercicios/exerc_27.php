@@ -34,7 +34,7 @@
         </form>
         <?php
             
-            if (isset($_GET['valor'])){
+            if (isset($_GET['valor'])) {
 
                 $valor = $_GET['valor'];
 
@@ -53,15 +53,15 @@
         function verificarValor($valor)
 
         {              
-            if($valor > 0) {
+            if ($valor > 0) {
 
                 echo '<p>O valor é positivo.';
 
-            }elseif($valor < 0) {
+            } elseif ($valor < 0) {
 
                 echo '<p>O valor é negativo.';
 
-            }else {
+            } else {
 
                 echo '<p>O valor é igual a zero.';
             }                                  

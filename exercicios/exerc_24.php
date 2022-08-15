@@ -36,8 +36,7 @@
         <?php
             
             if (!empty($_GET['salario_fixo']) 
-            && !empty($_GET['valor_vendas']) 
-            ) {
+            && !empty($_GET['valor_vendas'])) {
                 $salario_fixo = $_GET['salario_fixo'];
                 $valor_vendas = $_GET['valor_vendas'];
 
@@ -56,13 +55,13 @@
 
     function calcularNovoSalario($salario_fixo, $valor_vendas)
     {
-       if($valor_vendas <= 1500){
+       if ($valor_vendas <= 1500) {
 
            $comissao = $valor_vendas * 3/100;
             $salario_total = $salario_fixo + $comissao;
             echo "<p>O valor final do salário é de R$ $salario_total.";
 
-       }else {
+       } else {
 
             $comissao = $valor_vendas * 8/100;
             $salario_total = $salario_fixo + $comissao;

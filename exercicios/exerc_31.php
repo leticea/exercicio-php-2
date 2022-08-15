@@ -38,9 +38,7 @@
             
             if (isset($_GET['A'])
             && !empty($_GET['B']) 
-            && !empty($_GET['C']) 
-
-            ){
+            && !empty($_GET['C'])) {
 
                 $A = $_GET['A'];
                 $B = $_GET['B'];
@@ -61,19 +59,19 @@
         {
            
             
-            if($A != $B && $B != $C && $C != $A) {
+            if ($A != $B && $B != $C && $C != $A) {
                 
                 echo "<p>O triângulo é escaleno.";
 
-            }elseif($A == $B > $C || $A == $C > $B || $B == $C > $A) {
+            } elseif ($A == $B > $C || $A == $C > $B || $B == $C > $A) {
 
                 echo "<p>O triângulo é isósceles.";         
                
-            }elseif($A == $B && $B = $C && $A == $C) {
+            } elseif ($A == $B && $B = $C && $A == $C) {
 
                 echo "<p>O triângulo é equilátero.";
 
-            }else{
+            } else {
 
                 echo "<p>O triângulo não existe.";
             }     

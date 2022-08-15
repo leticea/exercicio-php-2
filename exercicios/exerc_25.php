@@ -40,15 +40,12 @@
             if (!empty($_GET['conta']) 
             && !empty($_GET['saldo']) 
             && !empty($_GET['debito']) 
-            && !empty($_GET['credito']) 
+            && !empty($_GET['credito'])) {
 
-
-            ) {
                 $conta = $_GET['conta'];
                 $saldo = $_GET['saldo'];
                 $debito = $_GET['debito'];
                 $credito = $_GET['credito'];
-
 
                 calcularSaldo(
                     $conta,                   
@@ -69,11 +66,11 @@
         {
              $saldo_atual = $saldo - $debito + $credito;           
 
-             if($saldo_atual >= 0){
+             if ($saldo_atual >= 0) {
 
                 echo '<p>Valor: R$ '.$saldo_atual.'.'.' Saldo positivo.'; 
 
-             }else {
+             } else {
                 
                 echo '<p>Valor: R$ '.$saldo_atual.'.'.' Saldo negativo.'; 
 

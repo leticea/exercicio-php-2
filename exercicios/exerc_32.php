@@ -36,9 +36,7 @@
         <?php
             
             if (isset($_GET['time_a'])
-            && !empty($_GET['time_b']) 
-
-            ){
+            && !empty($_GET['time_b'])) {
 
                 $time_a = $_GET['time_a'];
                 $time_b = $_GET['time_b'];
@@ -58,15 +56,15 @@
 
         {
        
-            if($time_a > $time_b){
+            if ($time_a > $time_b) {
 
                 echo "<p>O time A é o vencedor.";
 
-            }elseif($time_b > $time_a){
+            } elseif ($time_b > $time_a) {
 
                 echo "<p>O time B é o vencedor.";
 
-            }else{
+            } else {
 
                 echo "<p>Empate.";
             }

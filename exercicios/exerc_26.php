@@ -38,9 +38,7 @@
             
             if (!empty($_GET['atual']) 
             && !empty($_GET['maxima']) 
-            && !empty($_GET['minima']) 
-
-            ) {
+            && !empty($_GET['minima'])) {
                 $atual = $_GET['atual'];
                 $maxima = $_GET['maxima'];
                 $minima = $_GET['minima'];
@@ -64,11 +62,11 @@
 
             $media = ($maxima + $minima) / 2;
 
-            if($atual >= $media) {
+            if ($atual >= $media) {
                 
                 echo '<p>Não efetuar compra de produtos.';
 
-            }else {
+            } else {
 
                 echo '<p>Efetuar compra de produtos.';
             }

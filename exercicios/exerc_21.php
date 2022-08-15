@@ -62,7 +62,7 @@
 
         $tempo = 24;
 
-        if($hora_inicio <= $hora_termino) {
+        if ($hora_inicio <= $hora_termino) {
           
             $tempo = $hora_termino - $hora_inicio;
 

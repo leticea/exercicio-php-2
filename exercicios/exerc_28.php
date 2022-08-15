@@ -38,9 +38,7 @@
             
             if (isset($_GET['valor_1'])
             && !empty($_GET['valor_2']) 
-            && !empty($_GET['valor_3']) 
-
-            ){
+            && !empty($_GET['valor_3'])) {
 
                 $valor_1 = $_GET['valor_1'];
                 $valor_2 = $_GET['valor_2'];
@@ -61,15 +59,15 @@
 
     {
 
-        if($valor_1 > $valor_2 && $valor_1 > $valor_3) {
+        if ($valor_1 > $valor_2 && $valor_1 > $valor_3) {
 
             echo '<p>'.$valor_1;
 
-        }elseif($valor_2 > $valor_1 && $valor_2 > $valor_3) {
+        } elseif ($valor_2 > $valor_1 && $valor_2 > $valor_3) {
 
             echo '<p>'.$valor_2;
 
-        }else {
+        } else {
 
             echo '<p>'.$valor_3;
         }

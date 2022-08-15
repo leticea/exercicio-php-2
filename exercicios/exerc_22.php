@@ -36,8 +36,7 @@
         <?php
             
             if (!empty($_GET['horas_mes']) 
-            && !empty($_GET['salario_hora']) 
-            ) {
+            && !empty($_GET['salario_hora'])) {
                 $horas_mes = $_GET['horas_mes'];
                 $salario_hora = $_GET['salario_hora'];
 
@@ -56,12 +55,12 @@
 
     function calcularNovoSalario($horas_mes, $salario_hora)
     {
-        if($horas_mes <= 160) {
+        if ($horas_mes <= 160) {
 
             $salario = $horas_mes * $salario_hora;
             echo "<p>Não tem horas extras.";
 
-        }else {
+        } else {
 
             $salario = 160 * $salario_hora;
 

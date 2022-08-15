@@ -38,9 +38,7 @@
             
             if (isset($_GET['num_1'])
             && !empty($_GET['num_2']) 
-            && !empty($_GET['num_3']) 
-
-            ){
+            && !empty($_GET['num_3'])) {
 
                 $num_1 = $_GET['num_1'];
                 $num_2 = $_GET['num_2'];
@@ -65,11 +63,11 @@
 
             echo '<p>'.($num_1 + $num_2);
 
-        }elseif($num_2 > $num_1 && $num_3 > $num_1) {
+        } elseif ($num_2 > $num_1 && $num_3 > $num_1) {
 
             echo '<p>'.($num_2 + $num_3);
 
-        }else {
+        } else {
 
             echo '<p>'.($num_3 + $num_1);
         }
