@@ -75,13 +75,14 @@
             if ($litros <= 20) {
                 
                 $valor_combustivel = ($litros * $valor) - (($litros * $valor) * $porcentagem_abaixo_20) / 100;
-                echo '<p>R$'." ".  $valor_combustivel;
-
+                
             } else {
 
                 $valor_combustivel = ($litros * $valor) - (($litros * $valor) * $porcentagem_acima_20) / 100;
-                echo '<p>R$'." ".  $valor_combustivel;
+               
             }
 
+            echo '<p>R$'." ".  $valor_combustivel;
+            
         }
       
