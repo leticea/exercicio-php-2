@@ -41,6 +41,8 @@
             <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_37.php">Exercício 37</a></b></p><br>               
             <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_38.php">Exercício 38</a></b></p><br>               
             <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_40.php">Exercício 40</a></b></p><br>               
+            <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_41.php">Exercício 41</a></b></p><br>               
+
 
 
 
