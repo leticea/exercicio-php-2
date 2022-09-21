@@ -31,9 +31,9 @@
             Valor A: <input type="txt_number" name="A"><br><br> 
             Valor B: <input type="txt_number" name="B"><br><br> 
             Valor C: <input type="txt_number" name="C"><br><br> 
-
             <input type="submit" value="Verificar">
         </form>
+
         <?php
             
             if (isset($_GET['A'])
@@ -45,35 +45,34 @@
                 $C = $_GET['C'];
 
                 verificarTriangulo($A, $B, $C);
-                
+
             }
         ?>
-            <p>
-                <a href="../">Voltar</a>
-            </p>
+
+        <p>
+            <a href="../">Voltar</a>
+        </p>
     </body>
 </html>
 <?php
 
-        function verificarTriangulo($A, $B, $C)
-        {
-           
+    function verificarTriangulo($A, $B, $C)
+    {       
+        
+        if ($A != $B && $B != $C && $C != $A) {
             
-            if ($A != $B && $B != $C && $C != $A) {
-                
-                echo "<p>O triângulo é escaleno.";
+            echo "<p>O triângulo é escaleno.";
 
-            } elseif ($A == $B > $C || $A == $C > $B || $B == $C > $A) {
+        } elseif ($A == $B > $C || $A == $C > $B || $B == $C > $A) {
 
-                echo "<p>O triângulo é isósceles.";         
-               
-            } elseif ($A == $B && $B = $C && $A == $C) {
+            echo "<p>O triângulo é isósceles.";         
+            
+        } elseif ($A == $B && $B = $C && $A == $C) {
 
-                echo "<p>O triângulo é equilátero.";
+            echo "<p>O triângulo é equilátero.";
 
-            } else {
+        } else {
 
-                echo "<p>O triângulo não existe.";
-            }     
-
-        }
+            echo "<p>O triângulo não existe.";
+        }     
+    }

@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Exercícios Básicos</title>
-        
+        <title>Exercícios Básicos</title>        
         <style>
 
             *{
@@ -23,7 +22,7 @@
         </style>
     </head>
     <body>
-         <div>
+        <div>
             <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_21.php">Exercício 21</a></b></p><br>         
             <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_22.php">Exercício 22</a></b></p><br>         
             <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_24.php">Exercício 24</a></b></p><br>               
@@ -39,25 +38,7 @@
             <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_35.php">Exercício 35</a></b></p><br>               
             <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_36.php">Exercício 36</a></b></p><br>               
             <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_37.php">Exercício 37</a></b></p><br>               
-            <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_38.php">Exercício 38</a></b></p><br>               
-            <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_40.php">Exercício 40</a></b></p><br>               
-            <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_41.php">Exercício 41</a></b></p><br>               
-
-
-
-
-
-
-
-
-
-
+            <p><b><a href="http://localhost/exercicios-php-2/exercicios/exerc_38.php">Exercício 38</a></b></p><br>                            
         </div>    
-    </body>
-           
+    </body>           
 </html>
-
-
-
-
-

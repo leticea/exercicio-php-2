@@ -33,6 +33,7 @@
            
             <input type="submit" value="Calcular">
         </form>
+
         <?php
             
             if (!empty($_GET['horas_mes']) 
@@ -46,9 +47,10 @@
                 );                   
             }               
         ?>
-            <p>
-                <a href="../">Voltar</a>
-            </p>
+
+        <p>
+            <a href="../">Voltar</a>
+        </p>
     </body>
 </html>
 <?php
@@ -73,7 +75,6 @@
             $total = $salario + $salario_extras;
 
             echo "<p>O salário total com as horas extras é de R$ $total.";
-        }
-                 
+        }                 
     }
             

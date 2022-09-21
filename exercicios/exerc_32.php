@@ -30,9 +30,9 @@
         <form id="minhaForm" method="get" action="exerc_32.php">
             Número de gols do time A: <input type="txt_number" name="time_a"><br><br> 
             Número de gols do time B: <input type="txt_number" name="time_b"><br><br> 
-
             <input type="submit" value="Verificar">
         </form>
+
         <?php
             
             if (isset($_GET['time_a'])
@@ -45,29 +45,28 @@
                 
             }
         ?>
-            <p>
-                <a href="../">Voltar</a>
-            </p>
+
+        <p>
+            <a href="../">Voltar</a>
+        </p>
     </body>
 </html>
 <?php
 
-        function verificarResultadoJogo($time_a, $time_b)
+    function verificarResultadoJogo($time_a, $time_b)
+    {
+    
+        if ($time_a > $time_b) {
 
-        {
-       
-            if ($time_a > $time_b) {
+            echo "<p>O time A é o vencedor.";
 
-                echo "<p>O time A é o vencedor.";
+        } elseif ($time_b > $time_a) {
 
-            } elseif ($time_b > $time_a) {
+            echo "<p>O time B é o vencedor.";
 
-                echo "<p>O time B é o vencedor.";
+        } else {
 
-            } else {
-
-                echo "<p>Empate.";
-            }
-
+            echo "<p>Empate.";
         }
-      
+    }
+    

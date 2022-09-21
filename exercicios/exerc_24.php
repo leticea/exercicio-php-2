@@ -33,6 +33,7 @@
            
             <input type="submit" value="Calcular">
         </form>
+
         <?php
             
             if (!empty($_GET['salario_fixo']) 
@@ -46,9 +47,10 @@
                 );                   
             }               
         ?>
-            <p>
-                <a href="../">Voltar</a>
-            </p>
+
+        <p>
+            <a href="../">Voltar</a>
+        </p>
     </body>
 </html>
 <?php
@@ -66,8 +68,5 @@
             $comissao = $valor_vendas * 8/100;
             $salario_total = $salario_fixo + $comissao;
             echo "<p>O valor final do salário é de R$ $salario_total.";
-
-       }
-          
-                 
+       }                         
     }

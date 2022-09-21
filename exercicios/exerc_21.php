@@ -34,19 +34,18 @@
         </form>
 
         <?php
-            
-          
+                      
             if (!empty($_GET['inicio'])
             && !empty($_GET['termino'])) {
 
                 $inicio = $_GET['inicio'];
                 $termino = $_GET['termino'];
 
-
                 verificarTempo($inicio, $termino);             
 
             }
         ?>
+
         <p>
             <a href="../">Voltar</a>
         </p>
@@ -67,15 +66,11 @@
             $tempo = $hora_termino - $hora_inicio;
 
             echo "<p>O tempo de duração do jogo foi de: $tempo hs.";
-        }
-        else {
+
+        } else {
             
             $tempo = (24 - $hora_inicio) + $hora_termino;
 
             echo "<p>O tempo de duração do jogo foi de: $tempo hs.";
-        }
-        
-    }      
-        
- 
-    
+        }        
+    }         

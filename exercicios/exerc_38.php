@@ -30,9 +30,9 @@
         <form id="minhaForm" method="post" action="exerc_38.php">
             Digite o código do usuário: <input type="text" name="codigo"><br><br> 
             Digite a senha do usuário: <input type="password" name="senha"><br><br> 
-
             <input type="submit" value="Entrar">
         </form>
+
         <?php
     
             if (isset($_POST['codigo'])
@@ -46,32 +46,32 @@
                 
             }
         ?>
-            <p>
-                <a href="../">Voltar</a>
-            </p>
+        
+        <p>
+            <a href="../">Voltar</a>
+        </p>
     </body>
 </html>
 <?php
 
-        function permitirAcesso($codigo, $senha)
-        {
+    function permitirAcesso($codigo, $senha)
+    {
+    
+        if ($codigo != 1234) {
 
-          
-          if ($codigo != 1234) {
+        echo "<p>Usuário inválido.";
 
-            echo "<p>Usuário inválido.";
-
-          }
-          if ($senha != 9999) {
-
-            echo "<p>Senha incorreta.";
-
-          }
-          if ($codigo == 1234 && $senha == 9999) {
-
-            echo "<p>Acesso permitido.";
-
-          }
-
-          
         }
+
+        if ($senha != 9999) {
+
+        echo "<p>Senha incorreta.";
+
+        }
+
+        if ($codigo == 1234 && $senha == 9999) {
+
+        echo "<p>Acesso permitido.";
+
+        }          
+    }

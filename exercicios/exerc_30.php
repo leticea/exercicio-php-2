@@ -31,9 +31,9 @@
             Valor 1: <input type="txt_number" name="num_1"><br><br> 
             Valor 2: <input type="txt_number" name="num_2"><br><br> 
             Valor 3: <input type="txt_number" name="num_3"><br><br> 
-
             <input type="submit" value="Verificar">
         </form>
+
         <?php
             
             if (isset($_GET['num_1'])
@@ -48,15 +48,15 @@
                 
             }
         ?>
-            <p>
-                <a href="../">Voltar</a>
-            </p>
+
+        <p>
+            <a href="../">Voltar</a>
+        </p>
     </body>
 </html>
 <?php
 
     function verificarPosicaoDosValores($num_1, $num_2, $num_3)
-
     {              
 
         if ($num_1 >= $num_2 && $num_1 >= $num_3 && $num_2 >= $num_3) {
@@ -82,7 +82,5 @@
         } elseif (($num_3 >= $num_1 && $num_3 >= $num_2 && $num_2 >= $num_1)) {
 
             echo '<p>'.$num_1, " ". $num_2, " ". $num_3;
-
-        }
-           
+        }           
     }

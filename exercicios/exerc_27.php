@@ -28,10 +28,10 @@
     <body>
         <p>Digite um valor:
         <form id="minhaForm" method="get" action="exerc_27.php">
-            Valor: <input type="txt_number" name="valor"><br><br> 
-            
+            Valor: <input type="txt_number" name="valor"><br><br>             
             <input type="submit" value="Verificar">
         </form>
+
         <?php
             
             if (isset($_GET['valor'])) {
@@ -39,32 +39,32 @@
                 $valor = $_GET['valor'];
 
                 verificarValor($valor);
-                
+
             }
 
         ?>
-            <p>
-                <a href="../">Voltar</a>
-            </p>
+
+        <p>
+            <a href="../">Voltar</a>
+        </p>
     </body>
 </html>
 <?php
 
-        function verificarValor($valor)
+    function verificarValor($valor)
+    {              
+        if ($valor > 0) {
 
-        {              
-            if ($valor > 0) {
+            echo '<p>O valor é positivo.';
 
-                echo '<p>O valor é positivo.';
+        } elseif ($valor < 0) {
 
-            } elseif ($valor < 0) {
+            echo '<p>O valor é negativo.';
 
-                echo '<p>O valor é negativo.';
+        } else {
 
-            } else {
-
-                echo '<p>O valor é igual a zero.';
-            }                                  
-        }
+            echo '<p>O valor é igual a zero.';
+        }                                  
+    }
 
        

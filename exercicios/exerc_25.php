@@ -31,10 +31,10 @@
             Numero da conta: <input type="txt_number" name="conta"><br><br> 
             Saldo: <input type="txt_number" name="saldo"><br><br>
             Débito: <input type="txt_number" name="debito"><br><br>
-            Crédito: <input type="txt_number" name="credito"><br><br>
-          
+            Crédito: <input type="txt_number" name="credito"><br><br>         
             <input type="submit" value="Calcular">
         </form>
+
         <?php
             
             if (!empty($_GET['conta']) 
@@ -55,25 +55,24 @@
                 );                   
             }               
         ?>
-            <p>
-                <a href="../">Voltar</a>
-            </p>
+
+        <p>
+            <a href="../">Voltar</a>
+        </p>
     </body>
 </html>
 <?php
 
-        function calcularSaldo($conta, $saldo, $debito, $credito)
-        {
-             $saldo_atual = $saldo - $debito + $credito;           
+    function calcularSaldo($conta, $saldo, $debito, $credito)
+    {
+        $saldo_atual = $saldo - $debito + $credito;           
 
-             if ($saldo_atual >= 0) {
+        if ($saldo_atual >= 0) {
 
-                echo '<p>Valor: R$ '.$saldo_atual.'.'.' Saldo positivo.'; 
+            echo '<p>Valor: R$ '.$saldo_atual.'.'.' Saldo positivo.'; 
 
-             } else {
-                
-                echo '<p>Valor: R$ '.$saldo_atual.'.'.' Saldo negativo.'; 
-
-             }
-                
-        }
+        } else {
+        
+            echo '<p>Valor: R$ '.$saldo_atual.'.'.' Saldo negativo.'; 
+        }           
+    }

@@ -33,9 +33,9 @@
                 <option value="a">Álcool</option>
                 <option value="g" selected>Gasolina</option>
             </select>
-
             <input type="submit" value="Calcular">
         </form>
+
         <?php
     
             if (isset($_GET['litros'])
@@ -49,40 +49,39 @@
                 
             }
         ?>
-            <p>
-                <a href="../">Voltar</a>
-            </p>
+
+        <p>
+            <a href="../">Voltar</a>
+        </p>
     </body>
 </html>
 <?php
 
-        function calcularValorCombustivel($litros, $combustivel)
-        {
-          
-          
-            $valor = 2.90;
-            $porcentagem_abaixo_20 = 3;
-            $porcentagem_acima_20 = 5;
-
-            if ($combustivel == 'g') {
-                
-                $valor = 3.30;
-                $porcentagem_abaixo_20 = 4;
-                $porcentagem_acima_20 = 6;
-
-            } 
+    function calcularValorCombustivel($litros, $combustivel)
+    {
                
-            if ($litros <= 20) {
-                
-                $valor_combustivel = ($litros * $valor) - (($litros * $valor) * $porcentagem_abaixo_20) / 100;
-                
-            } else {
+        $valor = 2.90;
+        $porcentagem_abaixo_20 = 3;
+        $porcentagem_acima_20 = 5;
 
-                $valor_combustivel = ($litros * $valor) - (($litros * $valor) * $porcentagem_acima_20) / 100;
-               
-            }
+        if ($combustivel == 'g') {
+            
+            $valor = 3.30;
+            $porcentagem_abaixo_20 = 4;
+            $porcentagem_acima_20 = 6;
 
-            echo '<p>R$'." ".  $valor_combustivel;
+        } 
+            
+        if ($litros <= 20) {
+            
+            $valor_combustivel = ($litros * $valor) - (($litros * $valor) * $porcentagem_abaixo_20) / 100;
+            
+        } else {
+
+            $valor_combustivel = ($litros * $valor) - (($litros * $valor) * $porcentagem_acima_20) / 100;
             
         }
+
+        echo '<p>R$'." ".  $valor_combustivel;       
+    }
       

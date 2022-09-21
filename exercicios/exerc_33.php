@@ -30,9 +30,9 @@
         <form id="minhaForm" method="get" action="exerc_33.php">
             Valor 1: <input type="txt_number" name="valor_1"><br><br> 
             Valor 2: <input type="txt_number" name="valor_2"><br><br> 
-
             <input type="submit" value="Verificar">
         </form>
+
         <?php
             
             if (isset($_GET['valor_1'])
@@ -45,27 +45,27 @@
                 
             }
         ?>
-            <p>
-                <a href="../">Voltar</a>
-            </p>
+
+        <p>
+            <a href="../">Voltar</a>
+        </p>
     </body>
 </html>
 <?php
 
-        function verificarValor($valor_1, $valor_2)
-        {
+    function verificarValor($valor_1, $valor_2)
+    {
 
-            if ($valor_1 > $valor_2) {
+        if ($valor_1 > $valor_2) {
 
-                echo "<p>O primeiro é maior.";
+            echo "<p>O primeiro é maior.";
 
-            } elseif($valor_2 > $valor_1) {
+        } elseif($valor_2 > $valor_1) {
 
-                echo "<p>O segundo é maior.";
+            echo "<p>O segundo é maior.";
 
-            } else {
+        } else {
 
-                echo "<p>Números iguais.";
-            }
-            
-        }
+            echo "<p>Números iguais.";
+        }       
+    }

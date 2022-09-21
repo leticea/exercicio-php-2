@@ -30,10 +30,10 @@
         <form id="minhaForm" method="get" action="exerc_26.php">
             Quantidade atual: <input type="txt_number" name="atual"><br><br> 
             Quantidade máxima: <input type="txt_number" name="maxima"><br><br>
-            Quantidade mínima: <input type="txt_number" name="minima"><br><br>
-            
+            Quantidade mínima: <input type="txt_number" name="minima"><br><br>           
             <input type="submit" value="Verificar">
         </form>
+
         <?php
             
             if (!empty($_GET['atual']) 
@@ -50,25 +50,25 @@
                 );                   
             }               
         ?>
-            <p>
-                <a href="../">Voltar</a>
-            </p>
+
+        <p>
+            <a href="../">Voltar</a>
+        </p>
     </body>
 </html>
 <?php
 
-        function calcularEstoque($atual, $maxima, $minima)
-        {
+    function calcularEstoque($atual, $maxima, $minima)
+    {
 
-            $media = ($maxima + $minima) / 2;
+        $media = ($maxima + $minima) / 2;
 
-            if ($atual >= $media) {
-                
-                echo '<p>Não efetuar compra de produtos.';
+        if ($atual >= $media) {
+            
+            echo '<p>Não efetuar compra de produtos.';
 
-            } else {
+        } else {
 
-                echo '<p>Efetuar compra de produtos.';
-            }
-
+            echo '<p>Efetuar compra de produtos.';
         }
+    }
