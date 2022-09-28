@@ -13,7 +13,6 @@
                 margin: 10px;
                 padding: 10px;
                 width: 240px;
-
             }
 
             p { 
@@ -44,9 +43,7 @@
                 $litros = $_GET['litros'];
                 $combustivel = $_GET['combustivel'];
 
-
                 calcularValorCombustivel($litros, $combustivel);
-                
             }
         ?>
 
@@ -69,7 +66,6 @@
             $valor = 3.30;
             $porcentagem_abaixo_20 = 4;
             $porcentagem_acima_20 = 6;
-
         } 
             
         if ($litros <= 20) {
@@ -79,9 +75,7 @@
         } else {
 
             $valor_combustivel = ($litros * $valor) - (($litros * $valor) * $porcentagem_acima_20) / 100;
-            
         }
 
         echo '<p>R$'." ".  $valor_combustivel;       
-    }
-      
+    }   

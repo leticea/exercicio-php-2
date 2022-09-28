@@ -13,7 +13,6 @@
                 margin: 10px;
                 padding: 10px;
                 width: 240px;
-
             }
 
             p { 
@@ -42,8 +41,7 @@
                 $valor_2 = $_GET['valor_2'];
 
                 verificarValor($valor_1, $valor_2);
-                
-            }
+            }           
         ?>
 
         <p>
@@ -60,7 +58,7 @@
 
             echo "<p>O primeiro é maior.";
 
-        } elseif($valor_2 > $valor_1) {
+        } elseif ($valor_2 > $valor_1) {
 
             echo "<p>O segundo é maior.";
 

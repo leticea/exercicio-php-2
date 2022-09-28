@@ -13,7 +13,6 @@
                 margin: 10px;
                 padding: 10px;
                 width: 240px;
-
             }
 
             p { 
@@ -49,7 +48,6 @@
                 $mulher_nova = $_GET['mulher_nova'];
 
                 calcularValorIdades($homem_velho, $homem_novo, $mulher_velha, $mulher_nova);
-                
             }
         ?>
 
@@ -63,14 +61,14 @@
     function calcularValorIdades($homem_velho, $homem_novo, $mulher_velha, $mulher_nova)
     {
 
-        if(($homem_velho > $homem_novo) && ($mulher_velha > $mulher_nova)) {
+        if (($homem_velho > $homem_novo) && ($mulher_velha > $mulher_nova)) {
 
-        $soma = $homem_velho + $mulher_nova;
+            $soma = $homem_velho + $mulher_nova;
 
-        $produto = $homem_novo * $mulher_velha;
+            $produto = $homem_novo * $mulher_velha;
 
-        echo "<p>A soma das idades é: $soma.";
-        echo "<p>O produto das idades é: $produto.";
+            echo "<p>A soma das idades é: $soma.";
+            echo "<p>O produto das idades é: $produto.";
 
         } else {
 

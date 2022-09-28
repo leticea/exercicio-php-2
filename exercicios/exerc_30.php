@@ -13,7 +13,6 @@
                 margin: 10px;
                 padding: 10px;
                 width: 240px;
-
             }
 
             p { 
@@ -45,8 +44,7 @@
                 $num_3 = $_GET['num_3'];
 
                 verificarPosicaoDosValores($num_1, $num_2, $num_3);
-                
-            }
+            }          
         ?>
 
         <p>

@@ -13,7 +13,6 @@
                 margin: 10px;
                 padding: 10px;
                 width: 240px;
-
             }
 
             p { 
@@ -39,9 +38,7 @@
                 $valor = $_GET['valor'];
 
                 verificarValor($valor);
-
             }
-
         ?>
 
         <p>
@@ -65,6 +62,4 @@
 
             echo '<p>O valor é igual a zero.';
         }                                  
-    }
-
-       
+    }       

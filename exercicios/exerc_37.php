@@ -13,7 +13,6 @@
                 margin: 10px;
                 padding: 10px;
                 width: 240px;
-
             }
 
             p { 
@@ -42,7 +41,6 @@
                 $quantidade_macas = $_GET['quantidade_macas'];
 
                 calcularValorFrutas($quantidade_morangos, $quantidade_macas);
-                
             }
         ?>
 
@@ -61,14 +59,12 @@
         
         if ($quantidade_morangos > 5) {
         
-        $preco_morangos = 2.20;
-
+            $preco_morangos = 2.20;
         }
 
         if ($quantidade_macas > 5) {
         
-        $preco_macas = 1.50;        
-
+            $preco_macas = 1.50;        
         }
     
         $total_frutas = $quantidade_morangos + $quantidade_macas;
@@ -78,7 +74,6 @@
         if ($total_frutas > 8 || $preco_morangos + $preco_macas > 25) {
             
             $valor_venda -= ($valor_venda * 10) / 100;
-
         }
     
         echo "<p>O valor da compra é: R$ $valor_venda.";

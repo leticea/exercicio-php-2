@@ -13,7 +13,6 @@
                 margin: 10px;
                 padding: 10px;
                 width: 240px;
-
             }
 
             p { 
@@ -41,9 +40,7 @@
                 $codigo = $_POST['codigo'];
                 $senha = $_POST['senha'];
 
-
                 permitirAcesso($codigo, $senha);
-                
             }
         ?>
         
@@ -59,19 +56,16 @@
     
         if ($codigo != 1234) {
 
-        echo "<p>Usuário inválido.";
-
+            echo "<p>Usuário inválido.";
         }
 
         if ($senha != 9999) {
 
-        echo "<p>Senha incorreta.";
-
+            echo "<p>Senha incorreta.";
         }
 
         if ($codigo == 1234 && $senha == 9999) {
 
-        echo "<p>Acesso permitido.";
-
+            echo "<p>Acesso permitido.";
         }          
     }

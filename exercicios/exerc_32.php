@@ -13,7 +13,6 @@
                 margin: 10px;
                 padding: 10px;
                 width: 240px;
-
             }
 
             p { 
@@ -42,7 +41,6 @@
                 $time_b = $_GET['time_b'];
 
                 verificarResultadoJogo($time_a, $time_b);
-                
             }
         ?>
 

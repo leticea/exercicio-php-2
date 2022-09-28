@@ -13,7 +13,6 @@
                 margin: 10px;
                 padding: 10px;
                 width: 240px;
-
             }
 
             p { 
@@ -39,6 +38,7 @@
             if (!empty($_GET['atual']) 
             && !empty($_GET['maxima']) 
             && !empty($_GET['minima'])) {
+
                 $atual = $_GET['atual'];
                 $maxima = $_GET['maxima'];
                 $minima = $_GET['minima'];
